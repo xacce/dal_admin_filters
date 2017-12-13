@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
-from dal import autocomplete
 from django import forms
 from django.contrib.admin.filters import SimpleListFilter
 from django.core.exceptions import ImproperlyConfigured
 from django.forms.widgets import Media, MEDIA_TYPES
-
+from dal_select2.widgets import ModelSelect2
 
 class AutocompleteFilter(SimpleListFilter):
     template = "dal_admin_filters/autocomplete-filter.html"
