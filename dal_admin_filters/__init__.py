@@ -42,7 +42,7 @@ class AutocompleteFilter(SimpleListFilter):
 
         field = forms.ModelChoiceField(
             queryset=getattr(model, self.field_name).get_queryset(),
-            widget=autocomplete.ModelSelect2(
+            widget=ModelSelect2(
                 url=self.autocomplete_url,
             )
         )
